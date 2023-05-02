@@ -22,8 +22,9 @@
 
 ## DISEÑO DEL SOFTWARE
 
-*El proyecto se llevará principalmente a cabo usando React Native*
-El diagrama de clases sería el siguiente
+*El proyecto se llevará principalmente usando Java en Android Studio. En la empresa en la que hago las prácticas usan React y React Native principalmente, pero debido a que yo me dedico a realizar módulos para React Native usando Java, este último será el lenguaje que usaré para el proyecto.*
+*El diagrama de flujo de datos es el siguiente:*
+![dfd](C:\Users\Edwar\Documents\2ºDAM\PPP\ImagenDFDProyecto.png)
 
 ## ESTIMACIÓN DE COSTES
 
