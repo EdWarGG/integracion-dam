@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilFragment">
+
+    <TextView
+        android:id="@+id/fp_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/fp_perfil"
+        android:fontFamily="@font/bebasneue_regular"
+        style="@style/MyText"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imagen_perfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fp_tv_info"
+        app:shapeAppearanceOverlay="@style/Circular" />
+
+    <TextView
+        android:id="@+id/fp_tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="78dp"
+        android:text="@string/fp_username"
+        style="@style/MyText"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/imagen_perfil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fp_button_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/editar"
+        android:text="@string/fp_editar_perfil"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imagen_perfil"
+        app:layout_constraintTop_toBottomOf="@+id/fp_tv_nombre" />
+
+    <ScrollView
+        android:id="@+id/fp_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_perfil"
+        android:layout_marginTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fp_logo_estado"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                style="@style/Logo_estado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fp_logo_fnac"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                style="@style/Logo_fnac"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_estado" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fp_logo_altura"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                style="@style/Logo_altura"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fp_logo_fnac" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fp_logo_peso"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                style="@style/Logo_peso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fp_logo_altura" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fp_logo_grasa"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                style="@style/Logo_porcentaje"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fp_logo_peso" />
+
+            <TextView
+                android:id="@+id/fp_tv_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/fp_estado"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_logo_estado"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fp_tv_fnac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_fecha_de_nacimiento"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_logo_fnac"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_estado" />
+
+            <TextView
+                android:id="@+id/fp_tv_altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_altura"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_logo_altura"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_fnac" />
+
+            <TextView
+                android:id="@+id/fp_tv_peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_peso"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_logo_peso"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_altura" />
+
+            <TextView
+                android:id="@+id/fp_tv_grasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_grasa_corporal"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_logo_grasa"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_peso" />
+
+            <TextView
+                android:id="@+id/fp_tv_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_cm"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_tv_altura"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_fnac" />
+
+            <TextView
+                android:id="@+id/fp_tv_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_kg"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_tv_peso"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_cm" />
+
+            <TextView
+                android:id="@+id/fp_tv_porc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/fp_porcentaje"
+                style="@style/MyText"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/fp_tv_grasa"
+                app:layout_constraintTop_toBottomOf="@+id/fp_tv_kg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

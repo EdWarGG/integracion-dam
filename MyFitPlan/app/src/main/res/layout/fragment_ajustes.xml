@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjustesFragment">
+
+    <TextView
+        android:id="@+id/faj_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ajustes"
+        android:fontFamily="@font/bebasneue_regular"
+        style="@style/MyText"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/faj_tv_aviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="90dp"
+        android:text="@string/ajustes_de_myfitplan"
+        style="@style/MyText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faj_tv_info" />
+
+    <ScrollView
+        android:id="@+id/faj_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faj_tv_aviso"
+        android:layout_marginTop="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/faj_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/MyText"
+                android:text="@string/ajustes_perfil"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/faj_tv_ir_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/ajustes_ir_per_user"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_perfil" />
+
+            <TextView
+                android:id="@+id/faj_tv_borrar_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/ajustes_bor_per_user"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_ir_perfil" />
+
+            <TextView
+                android:id="@+id/faj_rutinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/MyText"
+                android:text="@string/ajustes_rutinas"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_borrar_perfil" />
+
+
+
+            <TextView
+                android:id="@+id/faj_tv_borrar_rutejer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/ajustes_bor_rut_ejer"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_rutinas" />
+
+            <TextView
+                android:id="@+id/faj_tv_borrar_rutalim"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/ajustes_bor_rut_alim"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_borrar_rutejer" />
+
+            <TextView
+                android:id="@+id/faj_tv_borrar_rutinas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/ajustes_bor_rutinas"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_borrar_rutalim" />
+
+            <TextView
+                android:id="@+id/faj_base_de_datos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/MyText"
+                android:text="@string/ajustes_base_de_datos"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_borrar_rutinas" />
+
+            <TextView
+                android:id="@+id/faj_tv_borrar_bd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/ajustes_bor_bd"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_base_de_datos" />
+
+            <TextView
+                android:id="@+id/faj_acerca_de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/MyText"
+                android:text="@string/ajustes_acerca_de"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_tv_borrar_bd" />
+
+            <TextView
+                android:id="@+id/faj_tv_acerca_de"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/ajustes_acerca_de_mfp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                style="@style/MySettingsOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/faj_acerca_de" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/faj_compartir"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        style="@style/Logo_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

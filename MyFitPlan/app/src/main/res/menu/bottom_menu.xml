@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ejercicioFragment"
+        android:title="Ejercicio"
+        android:icon="@drawable/logo_mancuerna" />
+    <item
+        android:id="@+id/alimentacionFragment"
+        android:title="Alimentación"
+        android:icon="@drawable/logo_cuchilloytenedor" />
+    <item
+        android:id="@+id/ajustesFragment"
+        android:title="Ajustes"
+        android:icon="@drawable/ajustes" />
+
+</menu>

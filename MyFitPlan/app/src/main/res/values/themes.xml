@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyFitPlan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_mfp</item>
+        <item name="colorPrimaryVariant">@color/red_mfp</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="SplashTheme" parent="Theme.MyFitPlan">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="MyText" parent="Theme.MyFitPlan">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MySettingsOptions" parent="Theme.MyFitPlan">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/red_mfp_light</item>
+    </style>
+
+    <style name="FABLogo" parent="Theme.MyFitPlan">
+        <item name="cornerSize">30%</item>
+    </style>
+
+    <style name="Logo_estado" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/estado</item>
+    </style>
+    <style name="Logo_fnac" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/fnac</item>
+    </style>
+    <style name="Logo_altura" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/altura</item>
+    </style>
+    <style name="Logo_peso" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/peso</item>
+    </style>
+    <style name="Logo_porcentaje" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/porcentaje</item>
+    </style>
+    <style name="Logo_editarImagen" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/edit_profile_picture</item>
+    </style>
+    <style name="Logo_hora" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/time</item>
+    </style>
+    <style name="Logo_opciones" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/options</item>
+    </style>
+    <style name="Logo_note" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/note</item>
+    </style>
+    <style name="Logo_mfp_titulo" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/myfitplan_logo_titulo</item>
+    </style>
+    <style name="Logo_share" parent="Theme.MyFitPlan">
+        <item name="android:src">@drawable/share</item>
+    </style>
+
+    <style name="ET_nombre" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/name</item>
+    </style>
+    <style name="ET_estado" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/estado</item>
+    </style>
+    <style name="ET_fnac" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/fnac</item>
+    </style>
+    <style name="ET_altura" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/altura</item>
+    </style>
+    <style name="ET_peso" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/peso</item>
+    </style>
+    <style name="ET_porcentaje" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/porcentaje</item>
+    </style>
+    <style name="ET_workout" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/workout</item>
+    </style>
+    <style name="ET_food" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/food</item>
+    </style>
+    <style name="ET_time" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/time</item>
+    </style>
+    <style name="ET_note" parent="Theme.MyFitPlan">
+        <item name="android:drawableStart">@drawable/note</item>
+    </style>
+
+    <style name="DateTimePickerTheme" parent="android:Theme.Material.Dialog">
+        <item name="android:colorAccent">@color/red_mfp</item>
+    </style>
+
+</resources>

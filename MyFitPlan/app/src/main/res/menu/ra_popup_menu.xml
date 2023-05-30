@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rapm_editar_rutima"
+        android:title="Editar rutina"/>
+    <item
+        android:id="@+id/rapm_crear_evento"
+        android:title="Crear evento Calendario"/>
+    <item
+        android:id="@+id/rapm_borrar_rutina"
+        android:title="Borrar rutina"/>
+</menu>
